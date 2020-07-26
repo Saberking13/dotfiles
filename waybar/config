@@ -61,7 +61,7 @@
         // "format-full": "",
         "format-icons": [" ", " ", " ", " ", " ", " ", " ", " "],
         "tooltip": false,
-        "on-click": "alacritty -e gotop"
+        "on-click": "lxtask"
     },
     "custom/powermenu": {
         "on-click": "notify-send \"End session\" \"Press Q to poweroff, W to reboot, E to logout, or Esc to cancel.\" ;swaymsg mode Logout",
@@ -88,7 +88,7 @@
             "default": ["", ""]
         },
         "tooltip": false,
-        "on-click": "alacritty -e pulsemixer"
+        "on-click": "pavucontrol"
     },
     "network": {
         "format-wifi": "{essid} ({signalStrength}%) ",
