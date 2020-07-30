@@ -26,6 +26,7 @@ window#waybar {
     color: white;
     transition-duration: 0;
     font-weight: bold;
+    font-family: "UbuntuMono Nerd Font";
     border-radius: 2px;
 }
 
@@ -90,7 +91,7 @@ window#waybar {
     margin-left: 0px;
     margin-right: 3px;
     padding-left: 4px;
-    padding-right: 4px;
+    padding-right: 6px;
     font-family: "Ubuntu Nerd Font";
     border-radius: 2px;
 }
