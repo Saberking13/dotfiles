@@ -19,7 +19,7 @@ set $term alacritty
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
 # set $menu rofi -font "JetBrainsMono Nerd Font Mono 10" -show run
-set $menu exec killall wofi; exec wofi --show drun --hide-scroll --xoffset=3 --yoffset=3 --width=600 --height=400
+set $menu exec ~/.config/waybar/scripts/wofi.sh
 # set $menu nwggrid -l us
 # Status Bar
 

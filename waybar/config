@@ -37,7 +37,7 @@
     "custom/menu": {
         "format": "  Launcher",
         "tooltip": false,
-        "on-click": " killall wofi; wofi --show drun --hide-scroll --xoffset=3 --yoffset=3 --width=600 --height=400"
+        "on-click": "~/.config/waybar/scripts/wofi.sh"
     },
     "custom/kernel": {
         "exec": "uname -r",
