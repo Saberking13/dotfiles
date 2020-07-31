@@ -2,8 +2,10 @@
 
 import requests
 
-id = requests.get('https://covid19.mathdro.id/api/countries/ID').json()
-confirmed_id = id["confirmed"]
+data = requests.get('https://covid19.mathdro.id/api/countries/ID').json()
+confirmed_raw = data["confirmed"]
+confirmed = str(confirmed_raw["value"])
 
-print(confirmed_id["value"])
-
+f = open("/home/lemniskett/.cache/covid-id", "w")
+f.write(confirmed)
+f.close()

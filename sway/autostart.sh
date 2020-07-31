@@ -25,6 +25,6 @@ sleep 4.5
 sleep 14.5
 
 while true; do
-  ~/.config/sway/scripts/covid-id.py > ~/.cache/covid-id
+  ~/.config/sway/scripts/covid-id.py
   sleep 600
 done
