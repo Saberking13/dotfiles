@@ -276,16 +276,16 @@ gaps inner 6
 gaps outer 3
 # border / titlebar
 default_border pixel
-for_window [app_id="^.*"] border pixel 1
-for_window [class="^.*"] border pixel 1
+for_window [app_id="^.*"] border pixel 2
+for_window [class="^.*"] border pixel 2
 for_window [app_id="lutris"] floating disable
 for_window [class='MEGAsync'] floating enable
 for_window [app_id="zenity"] floating enable
 for_window [class="Gimp"] floating enable
 
 client.focused              #2eb398 #2eb398 #222322 #2eb398 #2eb398
-client.unfocused            #464853 #464853 #222322 #464853 #464853
-client.focused_inactive     #464853 #464853 #222322 #464853 #464853
+client.unfocused            #282a33 #282a33 #222322 #282a33 #282a33
+client.focused_inactive     #282a33 #282a33 #222322 #282a33 #282a33
 
 exec ~/.config/sway/autostart.sh
 
