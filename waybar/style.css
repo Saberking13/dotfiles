@@ -162,6 +162,19 @@ window#waybar {
     border-radius: 2px;
 }
 
+#custom-pacman {
+    background: #464853;
+    margin-top: 3px;
+    margin-left: 3px;
+    color: white;
+    margin-left: 0px;
+    margin-right: 3px;
+    padding-left: 6px;
+    padding-right: 6px;
+    font-family: "Ubuntu Nerd Font";
+    border-radius: 2px;
+}
+
 #custom-menu {
     background: #2eb398;
     margin-top: 3px;
