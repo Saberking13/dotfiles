@@ -284,8 +284,8 @@ for_window [app_id="zenity"] floating enable
 for_window [class="Gimp"] floating enable
 
 client.focused              #2eb398 #2eb398 #222322 #2eb398 #2eb398
-client.unfocused            #282a33 #282a33 #222322 #282a33 #282a33
-client.focused_inactive     #282a33 #282a33 #222322 #282a33 #282a33
+client.unfocused            #282a33ee #282a33ee #222322 #282a33ee #282a33ee
+client.focused_inactive     #282a33ee #282a33ee #222322 #282a33ee #282a33ee
 
 exec ~/.config/sway/autostart.sh
 
