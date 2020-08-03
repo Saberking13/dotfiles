@@ -104,7 +104,7 @@
         "tooltip": false
     },
     "custom/pacman": {
-        "format": "{} "
+        "format": "{} ",
         "exec": "~/.config/waybar/scripts/check-updates.sh",
         "interval": 600,
         "tooltip": false

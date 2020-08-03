@@ -15,10 +15,10 @@ sleep 0.5
 
 # Auto starts after 5 seconds upon login
 sleep 4.5
-/usr/bin/megasync &
-/usr/bin/dunst &
+# /usr/bin/megasync &
+/bin/mako &
 ~/.config/sway/scripts/battery_notify.sh &
-/usr/bin/blueman-applet &
+# /usr/bin/blueman-applet &
 /bin/mega-cmd-server &
 
 # Auto starts after 15 seconds upon login
