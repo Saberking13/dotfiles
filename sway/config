@@ -283,9 +283,9 @@ for_window [class='MEGAsync'] floating enable
 for_window [app_id="zenity"] floating enable
 for_window [class="Gimp"] floating enable
 
-client.focused              #2eb398 #2eb398 #222322 #2eb398 #2eb398
-client.unfocused            #282a33ee #282a33ee #222322 #282a33ee #282a33ee
-client.focused_inactive     #282a33ee #282a33ee #222322 #282a33ee #282a33ee
+client.focused              #5294e2 #5294e2 #FFFFFF #5294e2 #5294e2
+client.unfocused            #282a33ee #282a33ee #FFFFFF #282a33ee #282a33ee
+client.focused_inactive     #282a33ee #282a33ee #FFFFFF #282a33ee #282a33ee
 
 exec ~/.config/sway/autostart.sh
 
