@@ -38,7 +38,7 @@ window#waybar {
 }
 
 #workspaces button.persistent {
-    background: rgba(50, 52, 61, 0.9);
+    background: rgba(50, 52, 61, 1);
     font-weight: normal;
     transition-duration: 0;
 }
@@ -70,7 +70,7 @@ window#waybar {
 }
 
 #tray {
-    background: rgba(50, 52, 61, 0.9);
+    background: rgba(50, 52, 61, 1);
     margin-top: 3px;
     margin-left: 3px;
     color: white;
@@ -84,7 +84,7 @@ window#waybar {
 }
 
 #cpu {
-    background: rgba(50, 52, 61, 0.9);
+    background: rgba(50, 52, 61, 1);
     margin-top: 3px;
     margin-left: 3px;
     color: white;
@@ -137,7 +137,7 @@ window#waybar {
 }
 
 #custom-ping {
-    background: rgba(50, 52, 61, 0.9);
+    background: rgba(50, 52, 61, 1);
     margin-top: 3px;
     margin-left: 3px;
     color: white;
@@ -150,7 +150,7 @@ window#waybar {
 }
 
 #custom-chinesevirus {
-    background: rgba(50, 52, 61, 0.9);
+    background: rgba(50, 52, 61, 1);
     margin-top: 3px;
     margin-left: 3px;
     color: white;
@@ -163,7 +163,7 @@ window#waybar {
 }
 
 #custom-pacman {
-    background: rgba(50, 52, 61, 0.9);
+    background: rgba(50, 52, 61, 1);
     margin-top: 3px;
     margin-left: 3px;
     color: white;
