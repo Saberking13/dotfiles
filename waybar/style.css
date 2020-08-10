@@ -22,7 +22,7 @@ window#waybar {
     padding-bottom: 2px;
     padding-right: 1px;
     padding-left: 1px;
-    background: #3274c2;
+    background: #db6421;
     color: white;
     transition-duration: 0;
     font-weight: bold;
@@ -31,7 +31,7 @@ window#waybar {
 }
 
 #workspaces button.focused {
-    background-color: #5294e2;
+    background-color: #fb8441;
     color: white;
     font-weight: bold;
     transition-duration: 0;
@@ -44,7 +44,7 @@ window#waybar {
 }
 
 #mode {
-    background-color: #5294e2;
+    background-color: #fb8441;
     margin-top: 3px;
     margin-left: 3px;
     color: white;
@@ -97,7 +97,7 @@ window#waybar {
 }
 
 #pulseaudio {
-    background: #4284d2;
+    background: #eb7431;
     margin-top: 3px;
     margin-left: 3px;
     color: white;
@@ -110,7 +110,7 @@ window#waybar {
 }
 
 #clock {
-    background: #5294e2;
+    background: #fb8441;
     margin-top: 3px;
     margin-left: 3px;
     color: white;
@@ -123,7 +123,7 @@ window#waybar {
 }
 
 #network {
-    background: #3274c2;
+    background: #db6421 ;
     margin-top: 3px;
     margin-left: 3px;
     color: white;
@@ -176,7 +176,7 @@ window#waybar {
 }
 
 #custom-menu {
-    background: #5294e2;
+    background: #fb8441;
     margin-top: 3px;
     margin-left: 3px;
     color: white;
@@ -190,7 +190,7 @@ window#waybar {
 }
 
 #battery {
-    background: #5294e2;
+    background: #fb8441;
     margin-top: 3px;
     margin-left: 3px;
     color: white;

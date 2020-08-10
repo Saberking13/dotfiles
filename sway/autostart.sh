@@ -20,6 +20,7 @@ sleep 4.5
 ~/.config/sway/scripts/battery_notify.sh &
 # /usr/bin/blueman-applet &
 /bin/mega-cmd-server &
+/bin/radeon-profile &
 
 # Auto starts after 15 seconds upon login
 sleep 14.5

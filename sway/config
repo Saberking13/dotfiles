@@ -130,7 +130,7 @@ input "1267:12448:ELAN0708:00_04F3:30A0_Touchpad" {
     # bindsym Control+$mod+e exec nwgbar
     # Take screenshot
     bindsym Print exec grim ~/Pictures/$(date +'%s_grim.png') && notify-send "System notice" "Full screenshot taken."
-    bindsym Shift+Print exec grim -g "$(slurp -w 0 -s '#5294e277' -b '#383a4477')" ~/Pictures/$(date +'%s_grim.png') && notify-send "System notice" "Partial screenshot taken."
+    bindsym Shift+Print exec grim -g "$(slurp -w 0 -s '#fb844177' -b '#383a4477')" ~/Pictures/$(date +'%s_grim.png') && notify-send "System notice" "Partial screenshot taken."
 
     # Startpage search
     bindsym $mod+s exec ~/.config/sway/scripts/startpage.sh
@@ -283,7 +283,7 @@ for_window [class='MEGAsync'] floating enable
 for_window [app_id="zenity"] floating enable
 for_window [class="Gimp"] floating enable
 
-client.focused              #5294e2 #5294e2 #FFFFFF #5294e2 #5294e2
+client.focused              #fb8441 #fb8441 #FFFFFF #fb8441 #fb8441
 client.unfocused            #383a43ee #383a43ee #FFFFFF #383a43ee #383a43ee
 client.focused_inactive     #383a43ee #383a43ee #FFFFFF #383a43ee #383a43ee
 

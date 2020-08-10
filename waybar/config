@@ -61,7 +61,7 @@
         // "format-full": "",
         "format-icons": [" ", " ", " ", " ", " ", " ", " ", " "],
         "tooltip": false,
-        "on-click": "lxtask"
+        "on-click": "alacritty -e bpytop"
     },
     "custom/powermenu": {
         "on-click": "notify-send \"End session\" \"Press Q to poweroff, W to reboot, E to logout, or Esc to cancel.\" ;swaymsg mode Logout",
