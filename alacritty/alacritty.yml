@@ -180,7 +180,7 @@ font:
 colors:
   # Default colors
   primary:
-    background: '#282a33'
+    background: '#1d1f21'
   #  foreground: '#eaeaea'
 
     # Bright and dim foreground colors
@@ -210,27 +210,43 @@ colors:
 
   # Normal colors
   normal:
-    black:   '#ffa441'
+    #black:   '#ffa441'
     #red:     '#ee4934'
-    red:     '#fb9441'
-    green:   '#eb8438'
-    yellow:  '#db7431'
-    blue:    '#cb6428'
-    magenta: '#bb5421'
-    cyan:    '#ab4418'
-    white:   '#9b3411'
+    #red:     '#fb9441'
+    #green:   '#eb8438'
+    #yellow:  '#db7431'
+    #blue:    '#cb6428'
+    #magenta: '#bb5421'
+    #cyan:    '#ab4418'
+    #white:   '#9b3411'
+    black: '#1d1f21'
+    red: '#cc6666'
+    green: '#b5bd68'
+    yellow: '#f0c674'
+    blue: '#81a2be'
+    magenta: '#b294bb'
+    cyan: '#8abeb7'
+    white: '#D8D8D8'
 
   # Bright colors
   bright:
-    black:   '#fa8421'
+    #black:   '#fa8421'
     #red:     '#ee4934'
-    red:     '#fb9441'
-    green:   '#fca461'
-    yellow:  '#fdb481'
-    blue:    '#fec4a1'
-    magenta: '#ffd4c1'
-    cyan:    '#ffe4e1'
-    white:   '#fff4f1'
+    #red:     '#fb9441'
+    #green:   '#fca461'
+    #yellow:  '#fdb481'
+    #blue:    '#fec4a1'
+    #magenta: '#ffd4c1'
+    #cyan:    '#ffe4e1'
+    #white:   '#fff4f1'
+    black: '#373b41'
+    red: '#cc6666'
+    green: '#b5bd68'
+    yellow: '#f0c674'
+    blue: '#81a2be'
+    magenta: '#b294bb'
+    cyan: '#8abeb7'
+    white: '#D8D8D8'
 
   # Dim colors
   #
@@ -286,7 +302,7 @@ colors:
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
-background_opacity: 0.93
+background_opacity: 0.7
 
 #selection:
   #semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"

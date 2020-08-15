@@ -130,7 +130,7 @@ input "1267:12448:ELAN0708:00_04F3:30A0_Touchpad" {
     # bindsym Control+$mod+e exec nwgbar
     # Take screenshot
     bindsym Print exec grim ~/Pictures/$(date +'%s_grim.png') && notify-send "System notice" "Full screenshot taken."
-    bindsym Shift+Print exec grim -g "$(slurp -w 0 -s '#fb844177' -b '#383a4477')" ~/Pictures/$(date +'%s_grim.png') && notify-send "System notice" "Partial screenshot taken."
+    bindsym Shift+Print exec grim -g "$(slurp -w 0 -s '#d8d8d877' -b '#373b4177')" ~/Pictures/$(date +'%s_grim.png') && notify-send "System notice" "Partial screenshot taken."
 
     # Startpage search
     bindsym $mod+s exec ~/.config/sway/scripts/startpage.sh
@@ -245,8 +245,8 @@ mode "Resize" {
 }
 
 mode "Logout" {
-    bindsym q exec sudo poweroff
-    bindsym w exec sudo reboot
+    bindsym q exec doas poweroff
+    bindsym w exec doas reboot
     bindsym e exec swaymsg exit
     bindsym Return mode "default"
     bindsym Escape mode "default"
@@ -283,9 +283,9 @@ for_window [class='MEGAsync'] floating enable
 for_window [app_id="zenity"] floating enable
 for_window [class="Gimp"] floating enable
 
-client.focused              #fb8441 #fb8441 #FFFFFF #fb8441 #fb8441
-client.unfocused            #383a43ee #383a43ee #FFFFFF #383a43ee #383a43ee
-client.focused_inactive     #383a43ee #383a43ee #FFFFFF #383a43ee #383a43ee
+client.focused              #d8d8d8 #d8d8d8 #373b41 #d8d8d8 #d8d8d8
+client.unfocused            #373b41 #373b41 #d8d8d8 #373b41 #373b41
+client.focused_inactive     #373b41 #373b41 #d8d8d8 #373b41 #373b41
 
 exec ~/.config/sway/autostart.sh
 

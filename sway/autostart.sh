@@ -1,7 +1,7 @@
 #!/bin/bash
 
-/usr/bin/waybar &
-/usr/bin/lxpolkit &
+waybar &
+lxpolkit &
 ~/.config/sway/scripts/turn_off_screen.sh &
 xhost si:localuser:root &
 
@@ -15,12 +15,13 @@ sleep 0.5
 
 # Auto starts after 5 seconds upon login
 sleep 4.5
-# /usr/bin/megasync &
-/bin/mako &
+mako &
 ~/.config/sway/scripts/battery_notify.sh &
 # /usr/bin/blueman-applet &
-/bin/mega-cmd-server &
-/bin/radeon-profile &
+# /bin/mega-cmd-server &
+megasync &
+# /bin/radeon-profile &
+hp-systray &
 
 # Auto starts after 15 seconds upon login
 sleep 14.5
