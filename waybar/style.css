@@ -22,8 +22,8 @@ window#waybar {
     padding-bottom: 2px;
     padding-right: 1px;
     padding-left: 1px;
-    background: #c09644;
-    color: white;
+    color: #f0c674;
+    background-color: rgba(28, 31, 33, 0.7);
     transition-duration: 0;
     font-weight: bold;
     font-family: "UbuntuMono Nerd Font";
@@ -38,7 +38,8 @@ window#waybar {
 }
 
 #workspaces button.persistent {
-    background: #1d1f21;
+    background: rgba(28, 31, 33, 0.7);
+    color: #d8d8d8;
     font-weight: normal;
     transition-duration: 0;
 }
@@ -70,10 +71,10 @@ window#waybar {
 }
 
 #tray {
-    background: #1d1f21;
+    background: #d8d8d8;
     margin-top: 3px;
     margin-left: 3px;
-    color: white;
+    color: black;
     margin-left: 0px;
     margin-right: 3px;
     padding-top: 1px;
@@ -84,10 +85,10 @@ window#waybar {
 }
 
 #cpu {
-    background: #1d1f21;
+    background: rgba(28, 31, 33, 0.7);
     margin-top: 3px;
     margin-left: 3px;
-    color: white;
+    color: #d8d8d8;
     margin-left: 0px;
     margin-right: 3px;
     padding-left: 4px;
@@ -97,7 +98,7 @@ window#waybar {
 }
 
 #pulseaudio {
-    background: #8abeb7;
+    background: #81a2be;
     margin-top: 3px;
     margin-left: 3px;
     color: white;
@@ -123,7 +124,7 @@ window#waybar {
 }
 
 #network {
-    background: #81a2be;
+    background: #8abeb7;
     margin-top: 3px;
     margin-left: 3px;
     color: white;
@@ -137,10 +138,10 @@ window#waybar {
 }
 
 #custom-ping {
-    background: #1d1f21;
+    background: rgba(28, 31, 33, 0.7);
     margin-top: 3px;
     margin-left: 3px;
-    color: white;
+    color: #d8d8d8;
     margin-left: 0px;
     margin-right: 3px;
     padding-left: 6px;
@@ -150,10 +151,10 @@ window#waybar {
 }
 
 #custom-chinesevirus {
-    background: #1d1f21;
+    background: rgba(28, 31, 33, 0.7);
     margin-top: 3px;
     margin-left: 3px;
-    color: white;
+    color: #d8d8d8;
     margin-left: 0px;
     margin-right: 3px;
     padding-left: 6px;
@@ -163,10 +164,10 @@ window#waybar {
 }
 
 #custom-pacman {
-    background: #1d1f21;
+    background: rgba(28, 31, 33, 0.7);
     margin-top: 3px;
     margin-left: 3px;
-    color: white;
+    color: #d8d8d8;
     margin-left: 0px;
     margin-right: 3px;
     padding-left: 6px;

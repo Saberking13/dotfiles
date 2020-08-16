@@ -4,7 +4,7 @@
     "height": 24,
     "modules-left": ["custom/menu", "sway/workspaces", "sway/mode"],
     "modules-center": ["clock"],
-    "modules-right": ["tray", "custom/pacman", "custom/chinesevirus", "cpu", "custom/ping", "network", "pulseaudio", "battery", "custom/powermenu"],
+    "modules-right": ["custom/pacman", "custom/chinesevirus", "cpu", "custom/ping", "tray", "network", "pulseaudio", "battery", "custom/powermenu"],
     "sway/window": {
         "max-length": 50
     },
