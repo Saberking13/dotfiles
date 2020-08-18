@@ -10,5 +10,5 @@ mount -R /sys $CHROOT/sys
 mount -R /dev $CHROOT/dev
 mount -R /run $CHROOT/run
 mount -R /var/lib/dbus $CHROOT/var/lib/dbus
-
-exit 0
+mount -R /lib/modules $CHROOT/lib/modules
+mount -R /boot $CHROOT/boot
