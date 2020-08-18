@@ -3,16 +3,6 @@
 CHROOT="/var/chroot/archlinux"
 SHELL="/bin/su lemniskett"
 
-#mount -R /home/lemniskett $CHROOT/home/lemniskett
-#mount -t proc /proc $CHROOT/proc
-#mount -R /tmp $CHROOT/tmp
-#mount -R /sys $CHROOT/sys
-#mount -R /dev $CHROOT/dev
-#mount -R /run $CHROOT/run
-#mount -R /var/lib/dbus $CHROOT/var/lib/dbus
-
-#doas chroot $CHROOT $SHELL
-
 umount -l $CHROOT/var/lib/dbus
 umount -l $CHROOT/tmp
 umount -l $CHROOT/proc

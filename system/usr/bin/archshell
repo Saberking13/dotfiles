@@ -1,0 +1,8 @@
+#!/bin/bash
+
+CHROOT="/var/chroot/archlinux"
+
+archcommand=$(echo $@ | tr ' ' '\ ')
+
+[[ -z $@ ]] && doas chroot $CHROOT /bin/su lemniskett \
+  || doas chroot $CHROOT su -c "$archcommand" lemniskett
