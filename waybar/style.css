@@ -71,10 +71,10 @@ window#waybar {
 }
 
 #tray {
-    background: #d8d8d8;
+    background: rgba(28, 31, 33, 1);
     margin-top: 3px;
     margin-left: 3px;
-    color: black;
+    color: white;
     margin-left: 0px;
     margin-right: 3px;
     padding-top: 1px;

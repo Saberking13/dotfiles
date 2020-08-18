@@ -94,6 +94,7 @@ input "1267:12448:ELAN0708:00_04F3:30A0_Touchpad" {
 #
     # Start a terminal
     bindsym $mod+Return exec $term
+    bindsym $mod+Shift+Return exec $term -e archlinux
 
     # Kill focused window
     bindsym $mod+q kill
