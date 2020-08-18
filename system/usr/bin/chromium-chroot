@@ -1,0 +1,23 @@
+#!/bin/sh
+
+CHROOT="/var/chroot/archlinux"
+SHELL="/bin/su lemniskett"
+
+#doas mount -R /home/lemniskett $CHROOT/home/lemniskett
+#doas mount -t proc /proc $CHROOT/proc
+#doas mount -R /tmp $CHROOT/tmp
+#doas mount -R /sys $CHROOT/sys
+#doas mount -R /dev $CHROOT/dev
+#doas mount -R /run $CHROOT/run
+#doas mount -R /var/lib/dbus $CHROOT/var/lib/dbus
+
+doas chroot $CHROOT su -c "chromium $@" lemniskett
+
+#doas umount -l $CHROOT/var/lib/dbus
+#doas umount -l $CHROOT/tmp
+#doas umount -l $CHROOT/proc
+#doas umount -l $CHROOT/sys
+#doas umount -l $CHROOT/dev
+#doas umount -l $CHROOT/run
+#doas umount -l $CHROOT/home/lemniskett
+exit 0
