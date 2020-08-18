@@ -5,4 +5,5 @@ CHROOT="/var/chroot/archlinux"
 archcommand=$(echo $@ | tr ' ' '\ ')
 
 [[ -z $@ ]] && doas chroot $CHROOT /bin/su lemniskett \
+  && neofetch \
   || doas chroot $CHROOT su -c "$archcommand" lemniskett
