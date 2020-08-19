@@ -249,12 +249,12 @@ mode "Logout" {
     bindsym q exec doas poweroff
     bindsym w exec doas reboot
     bindsym e exec swaymsg exit
-    bindsym Return mode "default"
+    bindsym r exec loginctl suspend && swaymsg mode default
     bindsym Escape mode "default"
 }
 
 bindsym $mod+r mode "Resize"
-bindsym Control+$mod+e exec notify-send "End session" "Press Q to poweroff, W to reboot, E to logout, or Esc to cancel." && swaymsg mode Logout
+bindsym Control+$mod+e exec notify-send "End session" "Press Q to poweroff, W to reboot, E to logout, R to suspend, or Esc to cancel." && swaymsg mode Logout
 #
 # Status Bar:
 #
@@ -279,6 +279,7 @@ gaps outer 3
 default_border pixel
 for_window [app_id="^.*"] border pixel 2
 for_window [class="^.*"] border pixel 2
+for_window [class="jetbrains-studio"] floating enable
 for_window [app_id="lutris"] floating enable
 for_window [class='MEGAsync'] floating enable
 for_window [app_id="zenity"] floating enable
