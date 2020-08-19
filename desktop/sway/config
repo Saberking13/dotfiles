@@ -273,8 +273,8 @@ bindsym Control+$mod+e exec notify-send "End session" "Press Q to poweroff, W to
 #    }
 #}
 
-gaps inner 6
-gaps outer 3
+gaps inner 8
+gaps outer 4
 # border / titlebar
 default_border pixel
 for_window [app_id="^.*"] border pixel 2
