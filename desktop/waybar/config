@@ -99,7 +99,7 @@
     },
     "custom/chinesevirus": {
         "format": "{} ",
-        "exec": "cat ~/.cache/covid-id",
+        "exec": "cat ~/.cache/covid",
         "interval": 60,
         "tooltip": false
     },

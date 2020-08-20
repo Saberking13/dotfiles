@@ -1,8 +1,8 @@
 set TTY1 (tty)
 if test -z "$DISPLAY"; and test $TTY1 = "/dev/tty1"
-    killall pulseaudio
-    killall autostart.sh
-    killall battery_notify.sh
+    killall pulseaudio 2>/dev/null
+    killall autostart.sh 2>/dev/null
+    killall battery_notify.sh 2>/dev/null
     # rm ~/.swayupdlog
     # touch ~/.swayupdlog
     rm ~/.sysupdlog
