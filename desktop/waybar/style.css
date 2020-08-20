@@ -27,7 +27,7 @@ window#waybar {
     transition-duration: 0;
     font-weight: bold;
     font-family: "UbuntuMono Nerd Font";
-    border-radius: 4px;
+    border-radius: 2px;
 }
 
 #workspaces button.focused {
@@ -54,7 +54,7 @@ window#waybar {
     padding-left: 6px;
     padding-right: 6px;
     font-weight: bold;
-    border-radius: 4px;
+    border-radius: 2px;
 }
 
 #custom-powermenu {
@@ -67,7 +67,7 @@ window#waybar {
     padding-left: 5px;
     padding-right: 5px;
     font-family: "Ubuntu Nerd Font";
-    border-radius: 4px;
+    border-radius: 2px;
 }
 
 #tray {
@@ -81,7 +81,7 @@ window#waybar {
     padding-left: 4px;
     padding-right: 4px;
     font-family: Ubuntu;
-    border-radius: 4px;
+    border-radius: 2px;
 }
 
 #cpu {
@@ -89,12 +89,12 @@ window#waybar {
     margin-top: 3px;
     margin-left: 3px;
     color: #d8d8d8;
-    margin-left: 0px;
+    margin-left: 3px;
     margin-right: 3px;
-    padding-left: 4px;
+    padding-left: 6px;
     padding-right: 6px;
     font-family: "Ubuntu Nerd Font";
-    border-radius: 4px;
+    border-radius: 2px;
 }
 
 #pulseaudio {
@@ -102,13 +102,13 @@ window#waybar {
     margin-top: 3px;
     margin-left: 3px;
     color: white;
-    margin-left: 3px;
+    margin-left: 0px;
     margin-right: 0px;
     padding-left: 6px;
     padding-right: 6px;
     font-weight: bold;
     font-family: "Ubuntu Nerd Font";
-    border-radius: 4px;
+    border-radius: 0px;
 }
 
 #clock {
@@ -121,7 +121,7 @@ window#waybar {
     padding-left: 6px;
     padding-right: 6px;
     font-weight: bold;
-    border-radius: 4px;
+    border-radius: 2px;
 }
 
 #network {
@@ -135,7 +135,7 @@ window#waybar {
     padding-right: 6px;
     font-weight: bold;
     font-family: "Ubuntu Nerd Font";
-    border-radius: 4px;
+    border-radius: 2px 0 0 2px;
 }
 
 #custom-ping {
@@ -148,7 +148,7 @@ window#waybar {
     padding-left: 6px;
     padding-right: 6px;
     font-family: "Ubuntu Nerd Font";
-    border-radius: 4px;
+    border-radius: 2px;
 }
 
 #custom-chinesevirus {
@@ -157,11 +157,11 @@ window#waybar {
     margin-left: 3px;
     color: #d8d8d8;
     margin-left: 0px;
-    margin-right: 3px;
+    margin-right: 0px;
     padding-left: 6px;
     padding-right: 6px;
     font-family: "Ubuntu Nerd Font";
-    border-radius: 4px;
+    border-radius: 2px;
 }
 
 #custom-pacman {
@@ -174,7 +174,7 @@ window#waybar {
     padding-left: 6px;
     padding-right: 6px;
     font-family: "Ubuntu Nerd Font";
-    border-radius: 4px;
+    border-radius: 2px;
 }
 
 #custom-menu {
@@ -188,7 +188,7 @@ window#waybar {
     padding-right: 6px;
     font-weight: bold;
     font-family: "Ubuntu Nerd Font";
-    border-radius: 4px;
+    border-radius: 2px;
 }
 
 #battery {
@@ -196,15 +196,15 @@ window#waybar {
     margin-top: 3px;
     margin-left: 3px;
     color: white;
-    margin-left: 3px;
+    margin-left: 0px;
     margin-right: 3px;
     padding-left: 6px;
     padding-right: 6px;
     font-weight: bold;
     font-family: "Ubuntu Nerd Font";
-    border-radius: 4px;
+    border-radius: 0 2px 2px 0;
 }
 
 #battery.charging {
-    padding-right: 4px;
+    padding-right: 2px;
 }

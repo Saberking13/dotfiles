@@ -19,8 +19,8 @@ mako &
 ~/.config/sway/scripts/battery_notify.sh &
 # /usr/bin/blueman-applet &
 # /bin/mega-cmd-server &
-megasync &
-# /bin/radeon-profile &
+env QT_QPA_PLATFORM= megasync &
+radeon-profile &
 hp-systray &
 
 # Auto starts after 15 seconds upon login
