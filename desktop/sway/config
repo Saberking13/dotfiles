@@ -14,7 +14,7 @@ set $down j
 set $up k
 set $right l
 # Your preferred terminal emulator
-set $term kitty
+set $term "kitty -1"
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
@@ -94,7 +94,7 @@ input "1267:12448:ELAN0708:00_04F3:30A0_Touchpad" {
 #
     # Start a terminal
     bindsym $mod+Return exec $term
-    bindsym $mod+Shift+Return exec $term -e archlinux
+    bindsym $mod+Shift+Return exec $term -e archshell
 
     # Kill focused window
     bindsym $mod+q kill
@@ -131,7 +131,7 @@ input "1267:12448:ELAN0708:00_04F3:30A0_Touchpad" {
     # bindsym Control+$mod+e exec nwgbar
     # Take screenshot
     bindsym Print exec grim ~/Pictures/$(date +'%s_grim.png') && notify-send "System notice" "Full screenshot taken."
-    bindsym Shift+Print exec grim -g "$(slurp -w 0 -s '#d8d8d877' -b '#373b4177')" ~/Pictures/$(date +'%s_grim.png') && notify-send "System notice" "Partial screenshot taken."
+    bindsym Shift+Print exec grim -g "$(slurp -w 0 -s '#81a1c177' -b '#4c566a77')" ~/Pictures/$(date +'%s_grim.png') && notify-send "System notice" "Partial screenshot taken."
 
     # Startpage search
     bindsym $mod+s exec ~/.config/sway/scripts/startpage.sh
@@ -273,8 +273,8 @@ bindsym Control+$mod+e exec notify-send "End session" "Press Q to poweroff, W to
 #    }
 #}
 
-gaps inner 8
-gaps outer 4
+gaps inner 4
+gaps outer 8
 # border / titlebar
 default_border pixel
 for_window [app_id="^.*"] border pixel 2
@@ -284,6 +284,9 @@ for_window [app_id="lutris"] floating enable
 for_window [class='MEGAsync'] floating enable
 for_window [app_id="zenity"] floating enable
 for_window [class="Gimp"] floating enable
+
+assign [app_id="logs"] workspace 9
+exec kitty -1 --class logs -e tail -f ~/.swaylog
 
 client.focused              #d8d8d8 #d8d8d8 #373b41 #d8d8d8 #d8d8d8
 client.unfocused            #575b61 #575b61 #d8d8d8 #575b61 #575b61

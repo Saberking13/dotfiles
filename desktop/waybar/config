@@ -4,7 +4,7 @@
     "height": 24,
     "modules-left": ["custom/menu", "sway/workspaces", "sway/mode"],
     "modules-center": ["clock"],
-    "modules-right": ["custom/pacman", "custom/chinesevirus", "cpu", "custom/ping", "tray", "network", "pulseaudio", "battery", "custom/powermenu"],
+    "modules-right": ["custom/chinesevirus", "cpu", "custom/ping", "tray", "network", "pulseaudio", "battery", "custom/powermenu"],
     "sway/window": {
         "max-length": 50
     },
@@ -101,12 +101,6 @@
         "format": "{} ",
         "exec": "cat ~/.cache/covid",
         "interval": 60,
-        "tooltip": false
-    },
-    "custom/pacman": {
-        "format": "{} ",
-        "exec": "~/.config/waybar/scripts/check-updates.sh",
-        "interval": 600,
         "tooltip": false
     }
 }

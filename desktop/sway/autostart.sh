@@ -27,6 +27,6 @@ hp-systray &
 sleep 14.5
 
 while true; do
-  ~/.config/sway/scripts/covid-id.py
+  ~/.config/sway/scripts/covid-id.sh
   sleep 600
 done

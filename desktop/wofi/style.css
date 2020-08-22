@@ -7,16 +7,16 @@ window {
 font-family: "Ubuntu" ;
 font-size: 12px;
 margin: 5px;
-border: 1px solid rgb(220, 220, 220);
-background-color: rgb(255, 255, 255);
+border: 1px solid #cccfd4;
+background-color: #eceff4;
 border-radius: 2px;
 }
 
 #input {
 margin: 6px 10px 6px 10px;
-border: 1px solid rgb(220, 220, 220);
-border-radius: 20px;
-padding: 4px 10px 4px 10px;
+border: 1px solid #81A1C1;
+border-radius: 4px;
+padding: 0px 10px 0px 10px;
 }
 
 #inner-box {
