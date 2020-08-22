@@ -23,7 +23,7 @@ window#waybar {
     padding-right: 3px;
     padding-left: 3px;
     color: #ebcb8b;
-    background-color: #4C566A;
+    background-color: #3B4252;
     transition-duration: 0;
     font-weight: bold;
     font-family: "UbuntuMono Nerd Font";
@@ -38,7 +38,7 @@ window#waybar {
 }
 
 #workspaces button.persistent {
-    background: #4C566A;
+    background: #3B4252;
     color: #eceff4;
     font-weight: normal;
     transition-duration: 0;
@@ -71,7 +71,7 @@ window#waybar {
 }
 
 #tray {
-    background: #4C566A;
+    background: #3B4252;
     margin-top: 3px;
     margin-left: 3px;
     color: white;
@@ -85,7 +85,7 @@ window#waybar {
 }
 
 #cpu {
-    background: #4C566A;
+    background: #3B4252;
     margin-top: 3px;
     margin-left: 3px;
     color: #eceff4;
@@ -139,7 +139,7 @@ window#waybar {
 }
 
 #custom-ping {
-    background: #4C566A;
+    background: #3B4252;
     margin-top: 3px;
     margin-left: 3px;
     color: #eceff4;
@@ -152,7 +152,7 @@ window#waybar {
 }
 
 #custom-chinesevirus {
-    background: #4C566A;
+    background: #3B4252;
     margin-top: 3px;
     margin-left: 3px;
     color: #eceff4;
