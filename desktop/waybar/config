@@ -61,7 +61,7 @@
         // "format-full": "",
         "format-icons": [" ", " ", " ", " ", " ", " ", " ", " "],
         "tooltip": false,
-        "on-click": "alacritty -e bpytop"
+        "on-click": "lxtask"
     },
     "custom/powermenu": {
         "on-click": "notify-send \"End session\" \"Press Q to poweroff, W to reboot, E to logout, or Esc to cancel.\" ;swaymsg mode Logout",
@@ -71,7 +71,7 @@
     "clock": {
         "format": "{:%a, %d %b %H:%M}",
         "tooltip": false,
-        "on-click": "alacritty -e calcurse"
+        "on-click": "kitty -1 -e calcurse"
     },
     "pulseaudio": {
         //"scroll-step": 1,
@@ -95,7 +95,7 @@
         "format-ethernet": "Wired: {ifname} ",
         "format-disconnected": "Disconnected ⚠",
         "tooltip": false,
-        "on-click": "alacritty -e nmtui"
+        "on-click": "kitty -1 -e nmtui"
     },
     "custom/chinesevirus": {
         "format": "{} ",

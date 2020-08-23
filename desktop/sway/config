@@ -287,6 +287,7 @@ for_window [class="Gimp"] floating enable
 
 assign [app_id="logs"] workspace 9
 exec kitty -1 --class logs -e tail -f ~/.swaylog
+exec kitty -1 --class logs -e tail -f ~/.swayerrlog
 
 client.focused              #d8d8d8 #d8d8d8 #373b41 #d8d8d8 #d8d8d8
 client.unfocused            #575b61 #575b61 #d8d8d8 #575b61 #575b61

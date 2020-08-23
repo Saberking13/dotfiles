@@ -24,7 +24,7 @@ set -x _JAVA_AWT_WM_NONREPARENTING 1
 # set -x QT_STYLE_OVERRIDE kvantum
 if test -z "$DISPLAY"; and test $TTY1 = "/dev/tty1"
     # dbus-launch --exit-with-session sway
-    exec dbus-launch --sh-syntax --exit-with-session sway > ~/.swaylog 2>&1
+    exec dbus-launch --sh-syntax --exit-with-session sway > ~/.swaylog 2> ~/.swayerrlog
     # exec sway
 end
 exit
