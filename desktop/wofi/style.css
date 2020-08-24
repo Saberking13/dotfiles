@@ -13,10 +13,10 @@ border-radius: 2px;
 }
 
 #input {
-margin: 6px 10px 6px 10px;
-border: 1px solid #81A1C1;
-border-radius: 4px;
-padding: 0px 10px 0px 10px;
+margin: 6px 6px 6px 6px;
+border-bottom: 1px solid #555555;
+border-radius: 0px;
+padding: 6px 10px 6px 10px;
 }
 
 #inner-box {
@@ -38,6 +38,7 @@ background-color: transparent;
 
 #entry:selected {
 background-color: rgba(0, 0, 0, 0.1);
+color: white;
 }
 
 #text:selected {

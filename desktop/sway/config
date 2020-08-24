@@ -274,7 +274,7 @@ bindsym Control+$mod+e exec notify-send "End session" "Press Q to poweroff, W to
 #}
 
 gaps inner 4
-gaps outer 8
+gaps outer 4
 # border / titlebar
 default_border pixel
 for_window [app_id="^.*"] border pixel 2
@@ -289,7 +289,7 @@ assign [app_id="logs"] workspace 9
 exec kitty -1 --class logs -e tail -f ~/.swaylog
 exec kitty -1 --class logs -e tail -f ~/.swayerrlog
 
-client.focused              #d8d8d8 #d8d8d8 #373b41 #d8d8d8 #d8d8d8
+client.focused              #d8d8d8 #d8d8d8 #d8d8d8 #d8d8d8 #d8d8d8
 client.unfocused            #575b61 #575b61 #d8d8d8 #575b61 #575b61
 client.focused_inactive     #575b61 #575b61 #d8d8d8 #575b61 #575b61
 

@@ -8,7 +8,7 @@ SETUVAR fish_color_command:81a1c1
 SETUVAR fish_color_comment:434c5e
 SETUVAR fish_color_cwd:green
 SETUVAR fish_color_cwd_root:red
-SETUVAR fish_color_end:88c0d0
+SETUVAR fish_color_end:bf616a
 SETUVAR fish_color_error:ebcb8b
 SETUVAR fish_color_escape:00a6b2
 SETUVAR fish_color_history_current:\x2d\x2dbold
