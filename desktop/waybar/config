@@ -1,7 +1,7 @@
 {
     "layer": "top",
     "position": "top",
-    "height": 26,
+    "height": 24,
     "modules-left": ["custom/menu", "sway/workspaces", "sway/mode"],
     "modules-center": ["clock"],
     "modules-right": ["custom/chinesevirus", "cpu", "custom/ping", "tray", "network", "pulseaudio", "battery", "custom/powermenu"],
@@ -61,7 +61,7 @@
         // "format-full": "",
         "format-icons": [" ", " ", " ", " ", " ", " ", " ", " "],
         "tooltip": false,
-        "on-click": "lxtask"
+        "on-click": "kitty -1 -e htop"
     },
     "custom/powermenu": {
         "on-click": "notify-send \"End session\" \"Press Q to poweroff, W to reboot, E to logout, or Esc to cancel.\" ;swaymsg mode Logout",
