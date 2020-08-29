@@ -14,7 +14,7 @@ set $down j
 set $up k
 set $right l
 # Your preferred terminal emulator
-set $term "kitty -1"
+set $term "footclient"
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
@@ -246,8 +246,8 @@ mode "Resize" {
 }
 
 mode "Logout" {
-    bindsym q exec doas poweroff
-    bindsym w exec doas reboot
+    bindsym q exec loginctl poweroff
+    bindsym w exec loginctl reboot
     bindsym e exec swaymsg exit
     bindsym r exec loginctl suspend && swaymsg mode default
     bindsym Escape mode "default"
@@ -285,15 +285,14 @@ for_window [class='MEGAsync'] floating enable
 for_window [app_id="zenity"] floating enable
 for_window [class="Gimp"] floating enable
 
-assign [app_id="logs"] workspace 9
-exec kitty -1 --class logs -e tail -f ~/.swaylog
-exec kitty -1 --class logs -e tail -f ~/.swayerrlog
+#assign [app_id="logs"] workspace 9
+#exec kitty -1 --class logs -e tail -f ~/.swaylog
+#exec kitty -1 --class logs -e tail -f ~/.swayerrlog
 
-client.focused              #d8d8d8 #d8d8d8 #d8d8d8 #d8d8d8 #d8d8d8
-client.unfocused            #575b61 #575b61 #d8d8d8 #575b61 #575b61
-client.focused_inactive     #575b61 #575b61 #d8d8d8 #575b61 #575b61
+client.focused              #d8dee9 #d8dee9 #333333 #d8dee9 #d8dee9
+client.unfocused            #575b61 #575b61 #d8dee9 #575b61 #575b61
+client.focused_inactive     #575b61 #575b61 #d8dee9 #575b61 #575b61
 
 exec ~/.config/sway/autostart.sh
-
 
 include /etc/sway/config.d/*

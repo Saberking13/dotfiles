@@ -4,7 +4,7 @@
     "height": 24,
     "modules-left": ["custom/menu", "sway/workspaces", "sway/mode"],
     "modules-center": ["clock"],
-    "modules-right": ["custom/chinesevirus", "cpu", "custom/ping", "tray", "network", "pulseaudio", "battery", "custom/powermenu"],
+    "modules-right": ["tray", "custom/chinesevirus", "cpu", "custom/ping", "idle_inhibitor", "network", "pulseaudio", "battery", "custom/powermenu"],
     "sway/window": {
         "max-length": 50
     },
@@ -30,6 +30,14 @@
         "interval": 3,
         "tooltip": false,
         "format": "{} ms 龍"
+    },
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "tooltip": false,
+        "format-icons": {
+            "activated": "",
+            "deactivated": ""
+        }
     },
     "cpu": {
         "format": "{usage}% "

@@ -23,7 +23,7 @@ window#waybar {
     background-color: #3B4252;
     transition-duration: 0;
     font-weight: bold;
-    font-family: "UbuntuMono Nerd Font";
+    font-family: "Ubuntu Nerd Font";
     border-radius: 2px;
 }
 
@@ -146,6 +146,23 @@ window#waybar {
     padding-right: 6px;
     font-family: "Ubuntu Nerd Font";
     border-radius: 2px;
+}
+
+#idle_inhibitor {
+    background: #3B4252;
+    margin-top: 3px;
+    margin-left: 3px;
+    color: #eceff4;
+    margin-left: 0px;
+    margin-right: 3px;
+    padding-left: 6px;
+    padding-right: 6px;
+    font-family: "Ubuntu Nerd Font";
+    border-radius: 2px;
+}
+
+#idle_inhibitor.activated {
+    color: #a3be8c;
 }
 
 #custom-chinesevirus {

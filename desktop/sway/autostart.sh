@@ -4,7 +4,8 @@ waybar &
 lxpolkit &
 ~/.config/sway/scripts/turn_off_screen.sh &
 xhost si:localuser:root &
-
+foot --server &
+#~/.config/sway/scripts/fade.py &
 # Auto starts after half a second.
 
 sleep 0.5
