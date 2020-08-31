@@ -5,5 +5,5 @@ CHROOT="/var/chroot/archlinux"
 archcommand=$(echo $@ | tr ' ' '\ ')
 
 [[ -z $@ ]] && doas chroot $CHROOT /bin/su lemniskett \
-  && neofetch \
+  && echo Mokou best girl\! && fet.sh \
   || doas chroot $CHROOT su -c "$archcommand" lemniskett
