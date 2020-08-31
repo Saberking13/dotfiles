@@ -21,6 +21,7 @@ set $term "footclient"
 # set $menu rofi -font "JetBrainsMono Nerd Font Mono 10" -show run
 set $menu exec ~/.config/waybar/scripts/wofi.sh
 # set $menu nwggrid -l us
+set $wob /tmp/swaytmp/wobpipe
 # Status Bar
 
 #bar {
@@ -116,11 +117,11 @@ input "1267:12448:ELAN0708:00_04F3:30A0_Touchpad" {
     floating_modifier $mod normal
 
     # This is for setting brightness
-    bindsym XF86MonBrightnessDown exec light -U 5
-    bindsym XF86MonBrightnessUp exec light -A 5
-    bindsym XF86AudioMute exec pulsemixer --toggle-mute
-    bindsym XF86AudioLowerVolume exec pulsemixer --change-volume -5
-    bindsym XF86AudioRaiseVolume exec pulsemixer --change-volume +5
+    bindsym XF86MonBrightnessDown exec light -U 5 && light -G | cut -d'.' -f1 > $wob
+    bindsym XF86MonBrightnessUp exec light -A 5 && light -G | cut -d'.' -f1 > $wob
+    bindsym XF86AudioMute exec pulsemixer --toggle-mute && echo 0 > $wob
+    bindsym XF86AudioLowerVolume exec pulsemixer --change-volume -5 && pulsemixer --get-volume | awk '{print $1}' > $wob
+    bindsym XF86AudioRaiseVolume exec pulsemixer --change-volume +5 && pulsemixer --get-volume | awk '{print $1}' > $wob
     bindsym XF86Display exec wdisplays
 
     # Reload the configuration file

@@ -5,6 +5,8 @@ lxpolkit &
 ~/.config/sway/scripts/turn_off_screen.sh &
 xhost si:localuser:root &
 foot --server &
+mkfifo /tmp/swaytmp/wobpipe &
+tail -f /tmp/swaytmp/wobpipe | wob --background-color '#FF2e3440' -t 2000 --bar-color '#ff81a1c1' -W 500 -H 20 -p 0 -o 0 --border-color '#FF575b61 ' -b 2 &
 #~/.config/sway/scripts/fade.py &
 # Auto starts after half a second.
 
@@ -20,7 +22,8 @@ mako &
 ~/.config/sway/scripts/battery_notify.sh &
 # /usr/bin/blueman-applet &
 # /bin/mega-cmd-server &
-env QT_QPA_PLATFORM= megasync &
+env QT_QPA_PLATFORM="" megasync &
+/usr/lib/telegram-desktop-bin/Telegram -startintray &
 radeon-profile &
 hp-systray &
 

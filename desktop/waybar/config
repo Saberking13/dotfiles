@@ -4,7 +4,7 @@
     "height": 24,
     "modules-left": ["custom/menu", "sway/workspaces", "sway/mode"],
     "modules-center": ["clock"],
-    "modules-right": ["tray", "custom/chinesevirus", "cpu", "custom/ping", "idle_inhibitor", "network", "pulseaudio", "battery", "custom/powermenu"],
+    "modules-right": ["tray", "idle_inhibitor", "custom/chinesevirus", "cpu", "custom/ping", "network", "pulseaudio", "battery", "custom/powermenu"],
     "sway/window": {
         "max-length": 50
     },
