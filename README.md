@@ -10,7 +10,9 @@
 6. [Neofetch](https://github.com/dylanaraps/neofetch) (System information fetcher)
 7. [Sway](https://github.com/swaywm/sway) (Windows manager)
 8. [Waybar](https://github.com/Alexays/Waybar) (Top bar)
-9. [Wofi](https://hg.sr.ht/~scoopta/wofi) (Application launcher)
+9. [Wofi](https://hg.sr.ht/~scoopta/wofi) (No longer used)(Application launcher)
+10. [Wldash](https://github.com/kennylevinsen/wldash) (Application launcher + dashboard)
+
 
 ### System
 1. Archshell bash script for executing commands inside Arch Linux chroot
