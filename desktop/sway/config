@@ -120,8 +120,8 @@ input "1267:12448:ELAN0708:00_04F3:30A0_Touchpad" {
     bindsym XF86MonBrightnessDown exec light -U 5 && light -G | cut -d'.' -f1 > $wob
     bindsym XF86MonBrightnessUp exec light -A 5 && light -G | cut -d'.' -f1 > $wob
     bindsym XF86AudioMute exec pulsemixer --toggle-mute && echo 0 > $wob
-    bindsym XF86AudioLowerVolume exec pulsemixer --change-volume -5 && pulsemixer --get-volume | awk '{print $1}' > $wob
-    bindsym XF86AudioRaiseVolume exec pulsemixer --change-volume +5 && pulsemixer --get-volume | awk '{print $1}' > $wob
+    bindsym XF86AudioLowerVolume exec pulsemixer --change-volume -5
+    bindsym XF86AudioRaiseVolume exec pulsemixer --change-volume +5
     bindsym XF86Display exec wdisplays
 
     # Reload the configuration file
@@ -131,8 +131,8 @@ input "1267:12448:ELAN0708:00_04F3:30A0_Touchpad" {
     # bindsym Control+$mod+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
     # bindsym Control+$mod+e exec nwgbar
     # Take screenshot
-    bindsym Print exec grim ~/Pictures/$(date +'%s_grim.png') && notify-send "System notice" "Full screenshot taken."
-    bindsym Shift+Print exec grim -g "$(slurp -w 0 -s '#81a1c177' -b '#4c566a77')" ~/Pictures/$(date +'%s_grim.png') && notify-send "System notice" "Partial screenshot taken."
+    bindsym Print exec grim ~/Pictures/grim/$(date +'%s_grim.png') && notify-send "System notice" "Full screenshot taken."
+    bindsym Shift+Print exec grim -g "$(slurp -w 0 -s '#81a1c177' -b '#4c566a77')" ~/Pictures/grim/$(date +'%s_grim.png') && notify-send "System notice" "Partial screenshot taken."
 
     # Startpage search
     bindsym $mod+s exec ~/.config/sway/scripts/startpage.sh
@@ -274,8 +274,8 @@ bindsym Control+$mod+e exec notify-send "End session" "Press Q to poweroff, W to
 #    }
 #}
 
-gaps inner 8
-gaps outer 4
+gaps inner 4
+gaps outer 8
 # border / titlebar
 default_border pixel
 for_window [app_id="^.*"] border pixel 2
@@ -285,7 +285,7 @@ for_window [app_id="lutris"] floating enable
 for_window [class='MEGAsync'] floating enable
 for_window [app_id="zenity"] floating enable
 for_window [class="Gimp"] floating enable
-
+for_window [app_id="qemu"] floating enable
 #assign [app_id="logs"] workspace 9
 #exec kitty -1 --class logs -e tail -f ~/.swaylog
 #exec kitty -1 --class logs -e tail -f ~/.swayerrlog
