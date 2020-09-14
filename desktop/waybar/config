@@ -1,9 +1,9 @@
 {
     "layer": "top",
-    "position": "top",
+    "position": "bottom",
     "height": 24,
-    "modules-left": ["custom/menu", "sway/workspaces", "sway/mode"],
-    "modules-center": ["clock"],
+    "modules-left": ["clock", "sway/window"],
+    "modules-center": ["sway/workspaces"],
     "modules-right": ["tray", "idle_inhibitor", "custom/chinesevirus", "cpu", "custom/ping", "network", "pulseaudio", "battery", "custom/powermenu"],
     "sway/window": {
         "max-length": 50
@@ -40,7 +40,9 @@
         }
     },
     "cpu": {
-        "format": "{usage}% "
+        "format": "{usage}% ",
+        "interval": "1",
+        "tooltip": false
     },
     "custom/menu": {
         "format": "  Launcher",
@@ -77,7 +79,7 @@
         "tooltip": false
     },
     "clock": {
-        "format": "{:%a, %d %b %H:%M}",
+        "format": " {:%a, %d %b %H:%M}",
         "tooltip": false,
         "on-click": "kitty -1 -e calcurse"
     },
@@ -99,8 +101,8 @@
         "on-click": "pavucontrol"
     },
     "network": {
-        "format-wifi": "{essid} ({signalStrength}%) ",
-        "format-ethernet": "Wired: {ifname} ",
+        "format-wifi": "{signalStrength}% ",
+        "format-ethernet": "Wired ",
         "format-disconnected": "Disconnected ⚠",
         "tooltip": false,
         "on-click": "kitty -1 -e nmtui"
@@ -109,6 +111,10 @@
         "format": "{} ",
         "exec": "cat ~/.cache/covid",
         "interval": 60,
+        "tooltip": false
+    },
+    "sway/window": {
+        "format": "  {}",
         "tooltip": false
     }
 }

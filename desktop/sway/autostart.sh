@@ -1,17 +1,18 @@
 #!/bin/bash
 
-waybar &
+pulseaudio &
 lxpolkit &
 ~/.config/sway/scripts/turn_off_screen.sh &
 xhost si:localuser:root &
 foot --server &
 mkfifo /tmp/swaytmp/wobpipe &
-#~/.config/sway/scripts/fade.py &
+waybar &
+# ~/.config/sway/scripts/fade.py &
 # Auto starts after half a second.
 
 sleep 0.5
 # /usr/bin/pulseaudio &
-# /usr/bin/waybar &
+# waybar &
 # /usr/bin/alacritty &
 # ~/.config/sway/scripts/wallpaper_update.sh &
 
@@ -23,7 +24,7 @@ tail -f /tmp/swaytmp/wobpipe | wob --background-color '#FF2e3440' -t 2000 --bar-
 # /usr/bin/blueman-applet &
 # /bin/mega-cmd-server &
 env QT_QPA_PLATFORM="" megasync &
-/usr/lib/telegram-desktop-bin/Telegram -startintray &
+~/Apps/Telegram/Telegram -startintray &
 radeon-profile &
 hp-systray &
 

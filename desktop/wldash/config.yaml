@@ -68,7 +68,7 @@ widget:
         - calendar:
             font_primary: ~
             font_secondary: ~
-            font_size: 8.0
+            font_size: 10.0
             sections: 3
         - launcher:
             font: ~

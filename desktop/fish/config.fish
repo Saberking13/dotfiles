@@ -20,6 +20,7 @@ set -x QT_QPA_PLATFORM wayland
 set -x MOZ_ENABLE_WAYLAND 1
 set -x QT_QPA_PLATFORMTHEME qt5ct
 set -x _JAVA_AWT_WM_NONREPARENTING 1
+set -x SIXEL_BGCOLOR '#2e3440'
 # set -x QT_STYLE_OVERRIDE kvantum
 if test -z "$DISPLAY"; and test $TTY1 = "/dev/tty1"
     # dbus-launch --exit-with-session sway
