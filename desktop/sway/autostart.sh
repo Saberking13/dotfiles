@@ -7,6 +7,7 @@ xhost si:localuser:root &
 foot --server &
 mkfifo /tmp/swaytmp/wobpipe &
 waybar &
+
 # ~/.config/sway/scripts/fade.py &
 # Auto starts after half a second.
 
