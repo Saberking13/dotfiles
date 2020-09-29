@@ -135,7 +135,7 @@ input "1267:12448:ELAN0708:00_04F3:30A0_Touchpad" {
     bindsym Shift+Print exec grim -g "$(slurp -w 0 -s '#81a1c177' -b '#4c566a77')" ~/Pictures/grim/$(date +'%s_grim.png') && notify-send "System notice" "Partial screenshot taken."
 
     # Restart foot server
-    bindsym Control+$mod+r exec killall foot && foot --server
+    bindsym Control+$mod+r exec foot --server
     # Startpage search
     bindsym $mod+s exec ~/.config/sway/scripts/startpage.sh
 #
@@ -277,7 +277,7 @@ bindsym Control+$mod+e exec notify-send "End session" "Press Q to poweroff, W to
 #}
 
 gaps inner 2
-gaps outer 6
+gaps outer 8
 # border / titlebar
 default_border pixel
 for_window [app_id="^.*"] border pixel 2

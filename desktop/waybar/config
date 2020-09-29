@@ -1,7 +1,7 @@
 {
     "layer": "top",
     "position": "bottom",
-    "height": 24,
+    "height": 22,
     "modules-left": ["clock", "sway/window"],
     "modules-center": ["sway/workspaces"],
     "modules-right": ["tray", "idle_inhibitor", "custom/chinesevirus", "cpu", "custom/ping", "network", "pulseaudio", "battery", "custom/powermenu"],
@@ -115,6 +115,7 @@
     },
     "sway/window": {
         "format": "  {}",
-        "tooltip": false
+        "tooltip": false,
+        "max-length": 50
     }
 }

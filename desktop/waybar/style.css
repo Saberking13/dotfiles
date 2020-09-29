@@ -1,197 +1,187 @@
 * {
-    padding-bottom: 0px;
-    border: none;
-    border-radius: 0;
-    font-family: "Ubuntu";
-    font-size: 12px;
-    min-height: 0;
+  padding-bottom: 0px;
+  border: none;
+  border-radius: 0;
+  font-family: "Ubuntu";
+  font-size: 11px;
+  min-height: 0;
 }
 
 window#waybar {
-    background: transparent;
-    color: rgba(255, 255, 255, 1);
+  background: transparent;
+  color: rgba(255, 255, 255, 1);
 }
 
 #workspaces {
-    margin-left: 3px;
+  margin-left: 3px;
 }
 
 #workspaces button {
-    margin: 0 3px 3px 0;
-    padding: 2px 1px 2px 1px;
-    color: #a3be8c;
-    background-color: #404757;
-    transition-duration: 0;
-    font-weight: bold;
-    font-family: "Ubuntu Nerd Font";
-    border-radius: 4px;
+  margin: 0 3px 3px 0;
+  padding: 2px 0 1px 0;
+  color: #a3be8c;
+  background-color: #404757;
+  transition-duration: 0;
+  font-weight: bold;
+  font-family: "Ubuntu Nerd Font";
+  border-radius: 2px;
 }
 
 #workspaces button.focused {
-    background-color: #a3be8c;
-    color: #404757;
-    font-weight: bold;
-    transition-duration: 0;
+  background-color: #a3be8c;
+  color: #404757;
+  font-weight: bold;
+  transition-duration: 0;
 }
 
 #workspaces button.persistent {
-    background: #404757;
-    color: #eceff4;
-    font-weight: normal;
-    transition-duration: 0;
-}
-
-#window {
-    background-color: #404757;
-    margin-bottom: 3px;
-    margin-left: 3px;
-    color: #eceff4;
-    margin-left: 3px;
-    margin-right: 0px;
-    padding-left: 6px;
-    padding-right: 6px;
-    font-weight: normal;
-    border-radius: 4px;
+  background: #404757;
+  color: #eceff4;
+  font-weight: normal;
+  transition-duration: 0;
 }
 
 #custom-powermenu {
-    background: #BF616A;
-    margin-bottom: 3px;
-    margin-left: 3px;
-    color: #404757;
-    margin-left: 0px;
-    margin-right: 3px;
-    padding-left: 5px;
-    padding-right: 5px;
-    font-family: "Ubuntu Nerd Font";
-    border-radius: 4px;
+  background: #bf616a;
+  margin-bottom: 3px;
+  margin-left: 3px;
+  color: #404757;
+  margin-left: 0px;
+  margin-right: 3px;
+  padding: 1px 4px 0 4px;
+  font-family: "Ubuntu Nerd Font";
+  border-radius: 2px;
+}
+
+#window {
+  background-color: #404757;
+  margin-bottom: 3px;
+  margin-left: 3px;
+  color: #eceff4;
+  margin-left: 3px;
+  margin-right: 0px;
+  padding: 1px 6px 0 6px;
+  font-weight: normal;
+  border-radius: 2px;
 }
 
 #tray {
-    background: #404757;
-    margin-bottom: 3px;
-    margin-left: 3px;
-    color: white;
-    margin-left: 0px;
-    margin-right: 0;
-    padding-top: 1px;
-    padding-left: 4px;
-    padding-right: 2px;
-    font-family: Ubuntu;
-    border-radius: 4px 0 0 4px;
+  background: #404757;
+  margin-bottom: 3px;
+  margin-left: 3px;
+  color: white;
+  margin-left: 0px;
+  margin-right: 0;
+  padding-top: 1px;
+  padding-left: 4px;
+  padding-right: 2px;
+  font-family: Ubuntu;
+  border-radius: 2px 0 0 2px;
 }
 
 #cpu {
-    background: #404757;
-    margin-bottom: 3px;
-    margin-left: 3px;
-    color: #eceff4;
-    margin-left: 3px;
-    margin-right: 3px;
-    padding-left: 6px;
-    padding-right: 6px;
-    font-family: "Ubuntu Nerd Font";
-    border-radius: 4px;
+  background: #404757;
+  margin-bottom: 3px;
+  margin-left: 3px;
+  color: #eceff4;
+  margin-left: 3px;
+  margin-right: 3px;
+  padding: 1px 6px 0 6px;
+  font-family: "Ubuntu Nerd Font";
+  border-radius: 2px;
 }
 
 #pulseaudio {
-    background: #81a1c1;
-    margin-bottom: 3px;
-    margin-left: 3px;
-    color: #404757;
-    margin-left: 0px;
-    margin-right: 0px;
-    padding-left: 6px;
-    padding-right: 6px;
-    font-weight: bold;
-    font-family: "Ubuntu Nerd Font";
-    border-radius: 0;
+  background: #81a1c1;
+  margin-bottom: 3px;
+  margin-left: 3px;
+  color: #404757;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 1px 6px 0 6px;
+  font-weight: bold;
+  font-family: "Ubuntu Nerd Font";
+  border-radius: 0;
 }
 
 #clock {
-    background: #ebcb8b;
-    margin-bottom: 3px;
-    margin-left: 3px;
-    color: #404757;
-    margin-left: 3px;
-    margin-right: 0px;
-    padding-left: 6px;
-    padding-right: 6px;
-    font-weight: bold;
-    border-radius: 4px;
+  background: #ebcb8b;
+  margin-bottom: 3px;
+  margin-left: 3px;
+  color: #404757;
+  margin-left: 3px;
+  margin-right: 0px;
+  padding: 1px 6px 0 6px;
+  font-weight: bold;
+  border-radius: 2px;
 }
 
 #network {
-    background: #8fbcbb;
-    margin-bottom: 3px;
-    margin-left: 3px;
-    color: #404757;
-    margin-left: 0px;
-    margin-right: 0px;
-    padding-left: 6px;
-    padding-right: 8px;
-    font-weight: bold;
-    font-family: "Ubuntu Nerd Font";
-    border-radius: 4px 0 0 4px;
+  background: #8fbcbb;
+  margin-bottom: 3px;
+  margin-left: 3px;
+  color: #404757;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 1px 6px 0 6px;
+  font-weight: bold;
+  font-family: "Ubuntu Nerd Font";
+  border-radius: 2px 0 0 2px;
 }
 
 #custom-ping {
-    background: #404757;
-    margin-bottom: 3px;
-    margin-left: 3px;
-    color: #eceff4;
-    margin-left: 0px;
-    margin-right: 3px;
-    padding-left: 6px;
-    padding-right: 6px;
-    font-family: "Ubuntu Nerd Font";
-    border-radius: 4px;
+  background: #404757;
+  margin-bottom: 3px;
+  margin-left: 3px;
+  color: #eceff4;
+  margin-left: 0px;
+  margin-right: 3px;
+  padding: 1px 6px 0 6px;
+  font-family: "Ubuntu Nerd Font";
+  border-radius: 2px;
 }
 
 #idle_inhibitor {
-    background: #404757;
-    margin-bottom: 3px;
-    margin-left: 3px;
-    color: #eceff4;
-    margin-left: 0px;
-    margin-right: 3px;
-    padding-left: 4px;
-    padding-right: 6px;
-    font-family: "Ubuntu Nerd Font";
-    border-radius: 0 4px 4px 0;
+  background: #404757;
+  margin-bottom: 3px;
+  margin-left: 3px;
+  color: #eceff4;
+  margin-left: 0px;
+  margin-right: 3px;
+  padding: 1px 6px 0 4px;
+  font-family: "Ubuntu Nerd Font";
+  border-radius: 0 2px 2px 0;
 }
 
 #idle_inhibitor.activated {
-    color: #a3be8c;
+  color: #a3be8c;
 }
 
 #custom-chinesevirus {
-    background: #404757;
-    margin-bottom: 3px;
-    margin-left: 3px;
-    color: #eceff4;
-    margin-left: 0px;
-    margin-right: 0px;
-    padding-left: 6px;
-    padding-right: 6px;
-    font-family: "Ubuntu Nerd Font";
-    border-radius: 4px;
+  background: #404757;
+  margin-bottom: 3px;
+  margin-left: 3px;
+  color: #eceff4;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 1px 6px 0 6px;
+  font-family: "Ubuntu Nerd Font";
+  border-radius: 2px;
 }
 
 #battery {
-    background: #b48ead;
-    margin-bottom: 3px;
-    margin-left: 3px;
-    color: #404757;
-    margin-left: 0px;
-    margin-right: 3px;
-    padding-left: 6px;
-    padding-right: 6px;
-    font-weight: bold;
-    font-family: "Ubuntu Nerd Font";
-    border-radius: 0 4px 4px 0;
+  background: #b48ead;
+  margin-bottom: 3px;
+  margin-left: 3px;
+  color: #404757;
+  margin-left: 0px;
+  margin-right: 3px;
+  padding: 1px 6px 0 6px;
+  font-weight: bold;
+  font-family: "Ubuntu Nerd Font";
+  border-radius: 0 2px 2px 0;
 }
 
 #battery.charging {
-    padding-right: 2px;
+  padding-right: 2px;
 }
