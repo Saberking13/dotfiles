@@ -1,0 +1,92 @@
+#!/bin/bash
+
+GTK="ZorinGreen"
+ICON="Papirus-ZorinGreen"
+WM="Frontiere-GreenZorin"
+WALL="/home/lemniskett/Pictures/wallpapers/mountain"
+VSCODE_JSON='/home/lemniskett/.config/Code - OSS/User/settings.json'
+VSCODE_LIGHT="GitHub Light"
+VSCODE_DARK="GitHub Dark"
+
+changetint2(){
+	killall tint2 >/dev/null 2>&1
+	tint2 -c ~/.config/tint2/$1.tint2rc >/dev/null 2>&1 &
+}
+
+changegtk(){
+	xfconf-query -c xsettings -p /Net/ThemeName -s "$GTK-$1" >/dev/null 2>&1
+}
+
+changeicon(){
+	xfconf-query -c xsettings -p /Net/IconThemeName -s "$ICON-$1" >/dev/null 2>&1
+}
+
+changewm(){
+	xfconf-query -c xfwm4 -p /general/theme -s "$WM-$1" >/dev/null 2>&1
+}
+
+changealacritty(){
+	cp ~/.config/alacritty/$1.yml ~/.config/alacritty/alacritty.yml >/dev/null 2>&1
+}
+
+changenotify(){
+	xfconf-query -c xfce4-notifyd -p /theme -s "$GTK-$1" >/dev/null 2>&1
+}
+
+changewall(){
+	xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitoreDP/workspace0/last-image -s $WALL-$1.png
+}
+
+changevscode(){
+	case $1 in
+		light)
+		sed -i "s/$VSCODE_DARK/$VSCODE_LIGHT/g" "$VSCODE_JSON"
+		;;
+		dark)
+		sed -i "s/$VSCODE_LIGHT/$VSCODE_DARK/g" "$VSCODE_JSON"
+		;;
+	esac
+}
+
+case $1 in
+	light)
+	changewall $1
+	changetint2 $1
+	changevscode $1
+	changegtk $1
+	changeicon $1
+	changewm $1
+	changealacritty $1
+	changenotify $1
+	echo $1 > ~/.themestate
+	;;
+	dark)
+	changewall $1
+	changetint2 $1
+	changevscode $1
+	changegtk $1
+	changeicon $1
+	changewm $1
+	changealacritty $1
+	changenotify $1
+	echo $1 > ~/.themestate
+	;;
+	--load)
+	changetheme $(cat ~/.themestate)
+	;;
+	--switch)
+	case $(cat ~/.themestate) in
+		light)
+		changetheme dark
+		;;
+		dark)
+		changetheme light
+		;;
+	esac
+	;;
+	--timeofday)
+	TIMEOFDAY=$(date +%_H)
+	[[ $TIMEOFDAY -ge 6 && $TIMEOFDAY -lt 18 ]] \
+		&& changetheme light \
+		|| changetheme dark
+esac
