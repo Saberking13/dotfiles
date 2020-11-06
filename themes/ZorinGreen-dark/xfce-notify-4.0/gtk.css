@@ -1,0 +1,16 @@
+#XfceNotifyWindow, #XfceNotifyWindow:hover {
+    border-radius: 0px;
+    border: 0px solid black;
+    background-color: #141a19;
+    box-shadow: none; 
+}
+
+#XfceNotifyWindow box.vertical > label#summary {
+    color: #b0f0df;
+    font-weight: bold;
+}
+
+#XfceNotifyWindow box.vertical > label#body {
+    color: rgba(176, 240, 223, 0.87);
+}
+

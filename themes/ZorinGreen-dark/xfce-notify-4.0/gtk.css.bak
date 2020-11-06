@@ -1,0 +1,68 @@
+#XfceNotifyWindow, #XfceNotifyWindow:hover {
+    border-radius: 0px;
+    border: 0px solid #222d32;
+    color: #CFD8DC;
+    background-color:
+    rgba(255, 255, 255, 1);
+    box-shadow: none; 
+}
+
+#XfceNotifyWindow box.vertical > label#summary {
+    color: #000000;
+    font-weight: bold;
+}
+
+#XfceNotifyWindow box.vertical > label#body {
+    color: rgba(0, 0, 0, 0.87);
+}
+
+#XfceNotifyWindow buttonbox button {
+    background-color: transparent;
+}
+
+#XfceNotifyWindow buttonbox button:not(:active):not(:disabled):not(hover) {
+    background-color: #EAEAEA;
+    color: #000000;
+}
+
+#XfceNotifyWindow buttonbox button:hover {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+#XfceNotifyWindow buttonbox button:active {
+    border-image: none;
+    background-color: #15a6f0;
+    color: #FFFFFF;
+    box-shadow: 1px 1px 4px #15a6f044
+}
+
+#XfceNotifyWindow buttonbox button:checked {
+    border-image: none;
+    background-color: transparent;
+    color: #FFFFFF;
+    box-shadow: none;
+}
+
+#XfceNotifyWindow buttonbox button:disabled {
+    background-color: transparent;
+    color: rgba(0 ,0 ,0 , 0.4);
+}
+
+#XfceNotifyWindow progressbar {
+    min-width: 4px;
+    min-height: 4px;
+}
+
+#XfceNotifyWindow progressbar trough {
+    border-style: none;
+    background-color: #dfecfb;
+    box-shadow: none;
+    height: 20px
+}
+
+#XfceNotifyWindow progressbar progress {
+    border-style: none;
+    background-image: none;
+    background-color: #15a6f0;
+}

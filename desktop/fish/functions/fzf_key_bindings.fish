@@ -1,1 +1,0 @@
-/home/lemniskett/git_repo/neovim-config/nvim/pack/packager/start/fzf/shell/key-bindings.fish
