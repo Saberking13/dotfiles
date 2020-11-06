@@ -1,0 +1,10 @@
+#!/bin/bash
+
+case $(xfconf-query -c xfce4-notifyd -p /do-not-disturb) in
+	"true")
+	xfconf-query -c xfce4-notifyd -p /do-not-disturb -s false
+	;;
+	"false")
+	xfconf-query -c xfce4-notifyd -p /do-not-disturb -s true
+	;;
+esac
