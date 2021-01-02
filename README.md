@@ -10,14 +10,8 @@
 6. [Neofetch](https://github.com/dylanaraps/neofetch) (Purged, checkout commit ```bfd6408```) (System information fetcher)
 7. [Sway](https://github.com/swaywm/sway) (Windows manager)
 8. [Waybar](https://github.com/Alexays/Waybar) (Top bar)
-9. [Wofi](https://hg.sr.ht/~scoopta/wofi) (Purged, checkout commit ```bfd6408```) (Application launcher)
+9. [Wofi](https://hg.sr.ht/~scoopta/wofi)
 10. [Wldash](https://github.com/kennylevinsen/wldash) (Application launcher + dashboard)
-
-
-### System
-1. Archshell bash script for executing commands inside Arch Linux chroot
-2. OpenRC local.d scripts for mounting necessary filesystems for Arch Linux chroot
-3. .desktop files for launching applications in chroot with application launcher
 
 ## Installation
 ### Desktop
