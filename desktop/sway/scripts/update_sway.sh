@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 NETCHECK=$(~/.config/sway/scripts/check_connection.sh)
 

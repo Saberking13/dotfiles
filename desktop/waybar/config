@@ -44,11 +44,6 @@
         "interval": "1",
         "tooltip": false
     },
-    "custom/menu": {
-        "format": "  Launcher",
-        "tooltip": false,
-        "on-click": "~/.config/waybar/scripts/wofi.sh"
-    },
     "custom/kernel": {
         "exec": "uname -r",
         "interval": "once",
@@ -65,13 +60,12 @@
             "warning": 20,
             "critical": 10
         },
-        "format": "{capacity}% {icon}",
-        "format-charging": "{capacity}% {icon}  ",
+        "format": "{capacity}% ",
+        "format-charging": "{capacity}% ",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
-        "format-icons": [" ", " ", " ", " ", " ", " ", " ", " "],
+        //"format-icons": [" ", " ", " ", " ", " ", " ", " ", " "],
         "tooltip": false,
-        "on-click": "kitty -1 -e htop"
     },
     "custom/powermenu": {
         "on-click": "notify-send \"End session\" \"Press Q to poweroff, W to reboot, E to logout, or Esc to cancel.\" ;swaymsg mode Logout",
@@ -81,7 +75,6 @@
     "clock": {
         "format": " {:%a, %d %b %H:%M}",
         "tooltip": false,
-        "on-click": "kitty -1 -e calcurse"
     },
     "pulseaudio": {
         //"scroll-step": 1,
@@ -105,7 +98,6 @@
         "format-ethernet": "Wired ",
         "format-disconnected": " ⚠",
         "tooltip": false,
-        "on-click": "kitty -1 -e nmtui"
     },
     "custom/chinesevirus": {
         "format": "{} ",

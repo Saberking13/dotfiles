@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 swayidle -w timeout 300 '~/.config/sway/scripts/lockscreen-blur.sh' \
             timeout 600 'swaymsg "output * dpms off"' \

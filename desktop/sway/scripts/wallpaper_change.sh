@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 WALLPAPER="$(shuf -n 1 ~/.cache/wallpaperdb)"
 

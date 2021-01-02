@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 LOW_BATTERY=19
 CRITICAL_BATTERY=9

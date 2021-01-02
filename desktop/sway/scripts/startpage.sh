@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 browser="chromium"
 keyword=$(zenity --entry --text="Search with Startpage.com") \

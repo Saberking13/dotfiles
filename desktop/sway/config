@@ -40,7 +40,7 @@ set $wob /tmp/swaytmp/wobpipe
 #    }
 #}
 
-font pango:Ubuntu Bold 9
+font pango:Inter Bold 9
 
 ### Output configuration
 #
@@ -117,8 +117,8 @@ input "1267:12448:ELAN0708:00_04F3:30A0_Touchpad" {
     floating_modifier $mod normal
 
     # This is for setting brightness
-    bindsym XF86MonBrightnessDown exec light -U 5 && light -G | cut -d'.' -f1 > $wob
-    bindsym XF86MonBrightnessUp exec light -A 5 && light -G | cut -d'.' -f1 > $wob
+    bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
+    bindsym XF86MonBrightnessUp exec brightnessctl set 5%+
     bindsym XF86AudioMute exec pulsemixer --toggle-mute && echo 0 > $wob
     bindsym XF86AudioLowerVolume exec pulsemixer --change-volume -5
     bindsym XF86AudioRaiseVolume exec pulsemixer --change-volume +5

@@ -1,3 +1,3 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-pidof wldash && killall wldash || wldash
+PID=$(pidof wofi) && kill $PID || wofi --show drun

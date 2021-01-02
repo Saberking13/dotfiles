@@ -78,5 +78,5 @@ widget:
             term_opener: ""
             url_opener: ""
 fonts:
-  mono: UbuntuMono Nerd Font
-  sans: Ubuntu
+  mono: JetBrainsMono Nerd Font
+  sans: Inter

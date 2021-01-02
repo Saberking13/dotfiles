@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 acpi_status=$(acpi --ac-adapter | awk '{print $3;}')
 

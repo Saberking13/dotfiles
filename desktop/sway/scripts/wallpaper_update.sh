@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 CACHE_DIR="$HOME/.cache"
 IMG_DIR="$CACHE_DIR/anime_girls_holding_programming_language"

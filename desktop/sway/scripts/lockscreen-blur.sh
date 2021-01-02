@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 grim -t png -c ~/.cache/lockscreen.png && blur_image -d /dev/dri/renderD128 \
     -p 6 -r 6 ~/.cache/lockscreen.png -o ~/.cache/lockscreen-blur.png
