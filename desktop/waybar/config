@@ -66,15 +66,17 @@
         // "format-full": "",
         //"format-icons": [" ", " ", " ", " ", " ", " ", " ", " "],
         "tooltip": false,
+	"on-click": "footclient htop"
     },
     "custom/powermenu": {
-        "on-click": "notify-send \"End session\" \"Press Q to poweroff, W to reboot, E to logout, or Esc to cancel.\" ;swaymsg mode Logout",
+        "on-click": "nwgbar -b 2e3440ff",
         "format": "⏻",
         "tooltip": false
     },
     "clock": {
         "format": " {:%a, %d %b %H:%M}",
         "tooltip": false,
+	"on-click": "footclient calcurse"
     },
     "pulseaudio": {
         //"scroll-step": 1,
@@ -98,6 +100,7 @@
         "format-ethernet": "Wired ",
         "format-disconnected": " ⚠",
         "tooltip": false,
+	"on-click": "footclient nmtui"
     },
     "custom/chinesevirus": {
         "format": "{} ",

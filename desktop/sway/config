@@ -249,15 +249,15 @@ mode "Resize" {
 }
 
 mode "Logout" {
-    bindsym q exec loginctl poweroff
-    bindsym w exec loginctl reboot
+    bindsym q exec systemctl poweroff
+    bindsym w exec systemctl reboot
     bindsym e exec swaymsg exit
-    bindsym r exec loginctl suspend && swaymsg mode default
+    bindsym r exec systemctl suspend && swaymsg mode default
     bindsym Escape mode "default"
 }
 
 bindsym $mod+r mode "Resize"
-bindsym Control+$mod+e exec notify-send "End session" "Press Q to poweroff, W to reboot, E to logout, R to suspend, or Esc to cancel." && swaymsg mode Logout
+bindsym Control+$mod+e exec nwgbar -b 2e3440ff
 #
 # Status Bar:
 #
@@ -296,7 +296,6 @@ for_window [app_id="chromium"] floating enable
 client.focused              #d8dee9 #d8dee9 #333333 #d8dee9 #d8dee9
 client.unfocused            #575b61 #575b61 #d8dee9 #575b61 #575b61
 client.focused_inactive     #575b61 #575b61 #d8dee9 #575b61 #575b61
-
 exec ~/.config/sway/autostart.sh
 
 include /etc/sway/config.d/*
