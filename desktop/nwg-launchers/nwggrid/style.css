@@ -1,0 +1,36 @@
+button, label, image {
+    background: none;
+    border-style: none;
+    box-shadow: none;
+    color: #d8dee9;
+}
+
+button {
+    padding: 5px;
+    margin: 5px;
+}
+
+button:focus {
+    background-color: #404757;
+}
+
+#searchbox {
+    background-color: #404757;
+    border: none;
+    border-radius: 20px;
+    color: #d8dee9;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+#separator {
+    background-color: transparent;
+    margin-left: 500px;
+    margin-right: 500px;
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+
+#description {
+    margin-bottom: 60px
+}
