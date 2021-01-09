@@ -2,9 +2,9 @@
     "layer": "top",
     "position": "bottom",
     "height": 22,
-    "modules-left": ["clock", "sway/window"],
+    "modules-left": ["clock", "custom/assistant"],
     "modules-center": ["sway/workspaces"],
-    "modules-right": ["tray", "idle_inhibitor", "custom/chinesevirus", "cpu", "custom/ping", "network", "pulseaudio", "battery", "custom/powermenu"],
+    "modules-right": ["tray", "idle_inhibitor", "cpu", "custom/ping", "network", "pulseaudio", "battery", "custom/powermenu"],
     "sway/window": {
         "max-length": 50
     },
@@ -73,6 +73,12 @@
         "format": "⏻",
         "tooltip": false
     },
+    "custom/assistant": {
+        "exec": "assistant",
+	"interval": 20,
+    "format": " {}",
+	"tooltip": false
+    },
     "clock": {
         "format": " {:%a, %d %b %H:%M}",
         "tooltip": false,
@@ -101,16 +107,5 @@
         "format-disconnected": " ⚠",
         "tooltip": false,
 	"on-click": "footclient nmtui"
-    },
-    "custom/chinesevirus": {
-        "format": "{} ",
-        "exec": "cat ~/.cache/covid",
-        "interval": 60,
-        "tooltip": false
-    },
-    "sway/window": {
-        "format": "  {}",
-        "tooltip": false,
-        "max-length": 50
     }
 }

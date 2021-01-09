@@ -18,7 +18,7 @@ window#waybar {
 
 #workspaces button {
   margin: 0 3px 3px 0;
-  padding: 2px 2px 1px 2px;
+  padding: 2px 0 1px 0;
   color: #a3be8c;
   background-color: #404757;
   transition-duration: 0;
@@ -52,7 +52,7 @@ window#waybar {
   border-radius: 2px;
 }
 
-#window {
+#custom-assistant {
   background-color: #404757;
   margin-bottom: 3px;
   margin-left: 3px;
@@ -69,7 +69,6 @@ window#waybar {
   margin-bottom: 3px;
   margin-left: 3px;
   color: white;
-  margin-left: 0px;
   margin-right: 0;
   padding-top: 1px;
   padding-left: 4px;
@@ -81,9 +80,7 @@ window#waybar {
 #cpu {
   background: #404757;
   margin-bottom: 3px;
-  margin-left: 3px;
   color: #eceff4;
-  margin-left: 3px;
   margin-right: 3px;
   padding: 1px 10px 0 6px;
   font-family: "JetBrainsMono Nerd Font";
@@ -154,18 +151,6 @@ window#waybar {
 
 #idle_inhibitor.activated {
   color: #a3be8c;
-}
-
-#custom-chinesevirus {
-  background: #404757;
-  margin-bottom: 3px;
-  margin-left: 3px;
-  color: #eceff4;
-  margin-left: 0px;
-  margin-right: 0px;
-  padding: 1px 10px 0 6px;
-  font-family: "JetBrainsMono Nerd Font";
-  border-radius: 2px;
 }
 
 #battery {
