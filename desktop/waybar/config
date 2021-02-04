@@ -76,11 +76,11 @@
     "custom/assistant": {
         "exec": "assistant",
 	"interval": 20,
-    "format": " {}",
+    "format": "  {}",
 	"tooltip": false
     },
     "clock": {
-        "format": " {:%a, %d %b %H:%M}",
+        "format": "  {:%a, %d %b %H:%M}",
         "tooltip": false,
 	"on-click": "footclient calcurse"
     },

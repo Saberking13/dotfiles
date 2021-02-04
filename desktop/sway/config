@@ -45,7 +45,7 @@ font pango:Inter Bold 9
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg ~/.config/sway/images/wallpaper.png fill
+# output * bg ~/.config/sway/images/wallpaper.png fill
 # exec ~/.config/sway/scripts/wallpaper_change.sh
 
 # Clamshell Mode
@@ -276,7 +276,7 @@ bindsym Control+$mod+e exec nwgbar -b 2e3440ff
 #    }
 #}
 
-gaps inner 2
+gaps inner 4
 gaps outer 4
 # border / titlebar
 default_border pixel

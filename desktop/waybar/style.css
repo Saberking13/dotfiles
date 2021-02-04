@@ -2,8 +2,8 @@
   padding-bottom: 0px;
   border: none;
   border-radius: 0;
-  font-family: "JetBrainsMono Nerd Font";
-  font-size: 12px;
+  font-family: "Iosevka Nerd Font";
+  font-size: 14px;
   min-height: 0;
 }
 
@@ -23,7 +23,7 @@ window#waybar {
   background-color: #404757;
   transition-duration: 0;
   font-weight: bold;
-  font-family: "JetBrainsMono Nerd Font";
+  font-family: "Iosevka Nerd Font";
   border-radius: 2px;
 }
 
@@ -47,8 +47,8 @@ window#waybar {
   color: #404757;
   margin-left: 0px;
   margin-right: 3px;
-  padding: 1px 8px 0 5px;
-  font-family: "JetBrainsMono Nerd Font";
+  padding: 1px 10px 0 5px;
+  font-family: "Iosevka Nerd Font";
   border-radius: 2px;
 }
 
@@ -73,7 +73,7 @@ window#waybar {
   padding-top: 1px;
   padding-left: 4px;
   padding-right: 2px;
-  font-family: JetBrainsMono Nerd Font;
+  font-family: Iosevka Nerd Font;
   border-radius: 2px 0 0 2px;
 }
 
@@ -83,7 +83,7 @@ window#waybar {
   color: #eceff4;
   margin-right: 3px;
   padding: 1px 10px 0 6px;
-  font-family: "JetBrainsMono Nerd Font";
+  font-family: "Iosevka Nerd Font";
   border-radius: 2px;
 }
 
@@ -94,9 +94,9 @@ window#waybar {
   color: #404757;
   margin-left: 0px;
   margin-right: 0px;
-  padding: 1px 10px 0 6px;
+  padding: 1px 12px 0 6px;
   font-weight: bold;
-  font-family: "JetBrainsMono Nerd Font";
+  font-family: "Iosevka Nerd Font";
   border-radius: 0;
 }
 
@@ -119,9 +119,9 @@ window#waybar {
   color: #404757;
   margin-left: 0px;
   margin-right: 0px;
-  padding: 1px 12px 0 6px;
+  padding: 1px 14px 0 6px;
   font-weight: bold;
-  font-family: "JetBrainsMono Nerd Font";
+  font-family: "Iosevka Nerd Font";
   border-radius: 2px 0 0 2px;
 }
 
@@ -133,7 +133,7 @@ window#waybar {
   margin-left: 0px;
   margin-right: 3px;
   padding: 1px 10px 0 6px;
-  font-family: "JetBrainsMono Nerd Font";
+  font-family: "Iosevka Nerd Font";
   border-radius: 2px;
 }
 
@@ -144,8 +144,8 @@ window#waybar {
   color: #eceff4;
   margin-left: 0px;
   margin-right: 3px;
-  padding: 1px 10px 0 4px;
-  font-family: "JetBrainsMono Nerd Font";
+  padding: 1px 12px 0 4px;
+  font-family: "Iosevka Nerd Font";
   border-radius: 0 2px 2px 0;
 }
 
@@ -162,6 +162,6 @@ window#waybar {
   margin-right: 3px;
   padding: 1px 8px 0 6px;
   font-weight: bold;
-  font-family: "JetBrainsMono Nerd Font";
+  font-family: "Iosevka Nerd Font";
   border-radius: 0 2px 2px 0;
 }
