@@ -15,6 +15,6 @@ mako &
 ~/.config/sway/scripts/battery_notify.sh &
 archbox megasync &
 mpd &
-
+telegram-desktop -startintray
 # Auto starts after 15 seconds upon login
 sleep 13

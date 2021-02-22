@@ -40,7 +40,7 @@ set $wob /tmp/swaytmp/wobpipe
 #    }
 #}
 
-font pango:Inter Bold 9
+font pango:Iosevka Nerd Font Bold 9
 
 ### Output configuration
 #
